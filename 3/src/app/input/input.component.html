@@ -1,0 +1,17 @@
+<div>
+	<input type="email"
+		[value]="value"
+		(change)="validate($event)"
+		placeholder="Please enter your E-Mail"/>
+
+	<ion-icon *ngIf="isValid" name="checkmark-outline"></ion-icon>
+
+	<ol *ngIf="isValid">
+		<li>{{ value }}</li>
+		<li>{{ value.split("@")[0] }}</li>
+		<li>{{ value.split("@")[1] }}</li>
+		<li>
+			<a href="mailto:{{ value }}?subject=That was an easy Task, Systaro!">Send E-Mail :)</a>
+		</li>
+	</ol>
+</div>

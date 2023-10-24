@@ -1,0 +1,11 @@
+<div>
+	<h1>{{ titleText }}</h1>
+	<i>Post-ID: {{ id }}</i>
+	<p>{{ bodyText }}</p>
+
+	<app-comment *ngFor="let comment of comments"
+		[id]="comment.id"
+		[name]="comment.name"
+		[email]="comment.email"
+		[body]="comment.body"></app-comment>
+</div>

@@ -1,0 +1,16 @@
+{
+  "name": "2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "ts-node sumOfDigits.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
